@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bubble_Sort
 {
     class Program
     {
-        //Deklarasi array int dengan ukuran 90
-        private int[] a = new int[90];
+        //Deklarasi array int dengan ukuran 92
+        private int[] a = new int[92];
 
         //Deklarasi variabel int untuk menyimpan banyaknya data pada array 
         private int n;
@@ -23,10 +19,10 @@ namespace Bubble_Sort
                 Console.WriteLine("Masukkan banyaknya elemen pada array: ");
                 string s = Console.ReadLine();
                 n = Int32.Parse(s);
-                if (n <= 90)
+                if (n <= 92)
                     break;
                 else
-                    Console.WriteLine("\nArray dapat mempunyai maksimal 90 elemen.\n");
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 92 elemen.\n");
             }
             Console.WriteLine("");
             Console.WriteLine("_____________________");
@@ -45,13 +41,15 @@ namespace Bubble_Sort
         {
             //Menampilkan array yang tersusun 
             Console.WriteLine("________________________________");
-            Console.ReadLine("Element array yang teleh tersusun");
+            Console.WriteLine(" Element array yang teleh tersusun ");
             Console.WriteLine("________________________________");
             for (int ah = 0; ah < n; ah++)
             {
                 Console.WriteLine(a[ah]);
             }
             Console.WriteLine("");
+            Console.ReadKey();
+
         }
         public void BubbleSortArray()
         {
